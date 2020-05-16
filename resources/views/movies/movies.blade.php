@@ -36,8 +36,6 @@
             <div class="col-lg-4 mb-5">
                 
                 <div class="movie text-left d-inline-block">
-                    
-                </div>
                 
                     <div>
                         @if($movie)
@@ -63,7 +61,7 @@
                         {!! Form::open(['route' => ['movies.destroy', $movie->id], 'method' => 'delete']) !!}
                             {!! Form::submit('この動画を削除する？', ['class' => 'button btn btn-danger']) !!}
                         {!! Form::close() !!}
-                    @endif
+                      @endif
                     
                 </div>
                 
